@@ -11,11 +11,11 @@ function App() {
     <div className="wrapper">
       <Header title="My Dummy App"/>
       <Navigation navItems={itemsArr} />
-      <Main pIndex='1' />
+      <Main pIndex='0' />
+      <Main pIndex='1'/>
       <Main pIndex='2'/>
       <Main pIndex='3'/>
       <Main pIndex='4'/>
-      <Main pIndex='5'/>
       <Footer footerItems={itemsArr} />
     </div>
   )
