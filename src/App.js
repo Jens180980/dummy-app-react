@@ -1,11 +1,24 @@
 import './App.css';
+import Header from './components/header'
+import Navigation from './components/nav'
+import Main from './components/main'
+import Footer from './components/footer'
+
+const itemsArr = ['Home', 'Products', 'About', 'Jobs', 'Contact']
 
 function App() {
   return (
-    <main className="wrapper">
-      
-    </main>
-  );
+    <div className="wrapper">
+      <Header title="My Dummy App"/>
+      <Navigation navItems={itemsArr} />
+      <Main pIndex='1' />
+      <Main pIndex='2'/>
+      <Main pIndex='3'/>
+      <Main pIndex='4'/>
+      <Main pIndex='5'/>
+      <Footer footerItems={itemsArr} />
+    </div>
+  )
 }
 
 export default App;
